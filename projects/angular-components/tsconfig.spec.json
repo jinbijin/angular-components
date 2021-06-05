@@ -4,15 +4,8 @@
   "compilerOptions": {
     "emitDecoratorMetadata": true,
     "outDir": "../../out-tsc/spec",
-    "types": [
-      "jest"
-    ]
+    "types": ["jest"]
   },
-  "files": [
-    "../../jest.setup.ts"
-  ],
-  "include": [
-    "**/*.spec.ts",
-    "**/*.d.ts"
-  ]
+  "files": ["../../jest.setup.ts"],
+  "include": ["**/*.spec.ts", "**/*.d.ts"]
 }

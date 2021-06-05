@@ -2,11 +2,11 @@ import type { InitialOptionsTsJest } from 'ts-jest/dist/types';
 import { defaults as jestNgPreset } from 'jest-preset-angular/presets';
 
 const config: InitialOptionsTsJest = {
-    ...jestNgPreset
+  ...jestNgPreset,
 };
 
 if (config.globals) {
-    config.globals['ts-jest'].tsconfig = '<rootDir>/projects/angular-components/tsconfig.spec.json';
+  config.globals['ts-jest'].tsconfig = '<rootDir>/projects/angular-components/tsconfig.spec.json';
 }
 config.setupFilesAfterEnv = ['<rootDir>/jest.setup.ts'];
 
