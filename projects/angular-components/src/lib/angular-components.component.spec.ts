@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { AngularComponentsComponent } from './angular-components.component';
 import * as expect from 'expect';
+import { AngularComponentsComponent } from './angular-components.component';
 
 describe('AngularComponentsComponent', () => {
   let component: AngularComponentsComponent;
