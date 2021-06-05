@@ -6,8 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "test:angular-components": "cypress open-ct --project projects/angular-components"
+    "jest:angular-components": "jest",
+    "cy:angular-components": "cypress open-ct --project projects/angular-components"
   },
   "private": true,
   "dependencies": {
@@ -21,7 +21,7 @@
     "@angular/router": "~12.0.3",
     "@jscutlery/cypress-angular": "^0.5.1",
     "ng-dynamic-component": "^8.0.1",
-    "rxjs": "~6.6.0",
+    "rxjs": "^7.1.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
   },
@@ -29,9 +29,14 @@
     "@angular-devkit/build-angular": "~12.0.3",
     "@angular/cli": "~12.0.3",
     "@angular/compiler-cli": "~12.0.3",
+    "@types/jest": "^26.0.23",
     "@types/node": "^14.17.2",
     "cypress": "^7.4.0",
+    "jest": "^27.0.4",
+    "jest-preset-angular": "^9.0.1",
     "ng-packagr": "^12.0.0",
+    "ts-jest": "^27.0.2",
+    "ts-node": "^10.0.0",
     "typescript": "~4.2.3"
   }
 }
