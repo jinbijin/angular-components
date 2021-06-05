@@ -6,9 +6,11 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "jest:angular-components": "jest",
-    "cy:angular-components": "cypress open-ct --project projects/angular-components",
-    "lint": "ng lint"
+    "format:check": "prettier --config ./.prettierrc --list-different .",
+    "lint": "ng lint",
+    "test": "jest",
+    "e2e": "cypress open-ct --project projects/angular-components",
+    "prepare": "husky install"
   },
   "private": true,
   "dependencies": {
@@ -41,10 +43,12 @@
     "@typescript-eslint/parser": "4.23.0",
     "cypress": "^7.4.0",
     "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jsdoc": "^35.1.2",
     "eslint-plugin-prefer-arrow": "^1.2.3",
     "expect": "^27.0.2",
+    "husky": "^6.0.0",
     "jest": "^27.0.4",
     "jest-preset-angular": "^9.0.1",
     "ng-packagr": "^12.0.0",
