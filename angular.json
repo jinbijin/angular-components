@@ -1,0 +1,70 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "83c4c8de-920f-43f5-8a2d-aae7ad12674d",
+    "defaultCollection": "@angular-eslint/schematics"
+  },
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "angular-components": {
+      "projectType": "library",
+      "root": "projects/angular-components",
+      "sourceRoot": "projects/angular-components/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/angular-components/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/angular-components/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/angular-components/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": ["projects/angular-components/**/*.ts", "projects/angular-components/**/*.html"]
+          }
+        }
+      }
+    },
+    "angular-aspects": {
+      "projectType": "library",
+      "root": "projects/angular-aspects",
+      "sourceRoot": "projects/angular-aspects/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/angular-aspects/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/angular-aspects/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/angular-aspects/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": ["projects/angular-aspects/**/*.ts", "projects/angular-aspects/**/*.html"]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "angular-components"
+}

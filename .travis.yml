@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - 14.17.0
+os: linux
+dist: bionic
+cache:
+  npm: true
+  directories:
+    - ~/.cache
+install:
+  - npm ci
+  - npm run integration:prepare
+  - npm run format:check
+  - npm run lint
+script:
+  - npm run unit:ci
+  - npm run integration:ci
