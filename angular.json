@@ -35,6 +35,35 @@
           }
         }
       }
+    },
+    "angular-aspects": {
+      "projectType": "library",
+      "root": "projects/angular-aspects",
+      "sourceRoot": "projects/angular-aspects/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/angular-aspects/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/angular-aspects/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/angular-aspects/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": ["projects/angular-aspects/**/*.ts", "projects/angular-aspects/**/*.html"]
+          }
+        }
+      }
     }
   },
   "defaultProject": "angular-components"

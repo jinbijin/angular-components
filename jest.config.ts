@@ -6,7 +6,7 @@ const config: InitialOptionsTsJest = {
 };
 
 if (config.globals) {
-  config.globals['ts-jest'].tsconfig = '<rootDir>/projects/angular-components/tsconfig.spec.json';
+  config.globals['ts-jest'].tsconfig = '<rootDir>/projects/angular-aspects/tsconfig.spec.json';
 }
 config.setupFilesAfterEnv = ['<rootDir>/jest.setup.ts'];
 

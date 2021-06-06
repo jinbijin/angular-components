@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 import * as expect from 'expect';
-import { AngularComponentsService } from './angular-components.service';
+import { AngularAspectsService } from './angular-aspects.service';
 
-describe('AngularComponentsService', () => {
-  let service: AngularComponentsService;
+describe('AngularAspectsService', () => {
+  let service: AngularAspectsService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(AngularComponentsService);
+    service = TestBed.inject(AngularAspectsService);
   });
 
   it('should be created', () => {

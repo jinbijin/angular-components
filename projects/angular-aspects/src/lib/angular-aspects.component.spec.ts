@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import * as expect from 'expect';
-import { AngularComponentsComponent } from './angular-components.component';
+import { AngularAspectsComponent } from './angular-aspects.component';
 
-describe('AngularComponentsComponent', () => {
-  let component: AngularComponentsComponent;
-  let fixture: ComponentFixture<AngularComponentsComponent>;
+describe('AngularAspectsComponent', () => {
+  let component: AngularAspectsComponent;
+  let fixture: ComponentFixture<AngularAspectsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [AngularComponentsComponent],
+      declarations: [AngularAspectsComponent],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AngularComponentsComponent);
+    fixture = TestBed.createComponent(AngularAspectsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

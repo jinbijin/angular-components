@@ -5,7 +5,7 @@
     {
       "files": ["*.ts"],
       "parserOptions": {
-        "project": ["projects/angular-components/tsconfig.lib.json", "projects/angular-components/tsconfig.spec.json"],
+        "project": ["projects/angular-aspects/tsconfig.lib.json", "projects/angular-aspects/tsconfig.spec.json"],
         "createDefaultProgram": true
       },
       "rules": {
@@ -13,7 +13,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "jjng",
+            "prefix": "jjnga",
             "style": "camelCase"
           }
         ],
@@ -21,7 +21,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "jjng",
+            "prefix": "jjnga",
             "style": "kebab-case"
           }
         ]

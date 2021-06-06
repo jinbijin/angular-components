@@ -3,6 +3,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
+      "angular-aspects": ["dist/angular-aspects/angular-aspects", "dist/angular-aspects"],
       "angular-components": ["dist/angular-components/angular-components", "dist/angular-components"]
     },
     "baseUrl": "./",
