@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'jj-angular-components',
+  selector: 'jjc-angular-components',
   template: ` <p>angular-components works!</p> `,
   styles: [],
 })
